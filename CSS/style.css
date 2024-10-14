@@ -83,7 +83,7 @@ h1 {
 }
 
 /* Project 4 - Stop Watch */
-.time {
+#time {
   font-size: 8rem;
   display: flex;
   justify-content: center;
