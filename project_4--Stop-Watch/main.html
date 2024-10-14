@@ -8,11 +8,11 @@
   </head>
   <body>
     <h1>Stop watch</h1>
-    <div class="timer"></div>
+    <time class="time">00:00</time>
     <div class="buttons">
-      <button class="btn">Start</button>
-      <button class="btn">Stop</button>
-      <button class="btn">Clear</button>
+      <button onclick="startClock()" class="btn">Start</button>
+      <button onclick="stopClock()" class="btn">Stop</button>
+      <button onclick="resetClock()" class="btn">Clear</button>
     </div>
     <script src="index.js"></script>
   </body>

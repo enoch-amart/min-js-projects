@@ -81,3 +81,12 @@ h1 {
   font-size: 2rem;
   padding-left: 3rem;
 }
+
+/* Project 4 - Stop Watch */
+.time {
+  font-size: 8rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
