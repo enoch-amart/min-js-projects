@@ -9,7 +9,7 @@
   <body>
     <h1>TODO List</h1>
     <h2>Items</h2>
-    <div class="items"></div>
+    <div class="items" id="item"></div>
     <input
       type="text"
       id="itemInput"
@@ -18,9 +18,9 @@
     />
 
     <div class="buttons project5">
-      <button class="btn" onclick="addItem()">Add Item</button>
-      <button class="btn" onclick="addItem()">Clear Item</button>
+      <button onclick="addItem()" class="btn">Add Item</button>
+      <button class="btn" onclick="clearItem()">Clear Item</button>
     </div>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
