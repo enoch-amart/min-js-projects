@@ -25,7 +25,6 @@ h1 {
   margin: 1rem 3rem;
   outline: 0;
   padding: 1rem 2rem;
-  width: 10rem;
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -74,4 +73,10 @@ h1 {
   padding: 1rem 2rem;
   border: 1px solid #ccc;
   outline: 0;
+}
+
+/* Project 3 - Random Quote Generator */
+#quote {
+  font-size: 2rem;
+  padding-left: 3rem;
 }
