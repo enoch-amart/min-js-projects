@@ -1,8 +1,8 @@
 const input = document.getElementById("input");
 
-// function onClear() {
-//   input.value = "";
-// }
+function onClear() {
+  input.value = "";
+}
 
 function check() {
   const value = input.value;
