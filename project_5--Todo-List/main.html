@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="/CSS/style.css" />
   </head>
   <body>
-    <h1>TODO List</h1>
+    <h1 class="header">TODO List</h1>
     <h2>Items</h2>
-    <div class="items" id="item"></div>
+    <ul class="list items" id="item"></ul>
     <input
       type="text"
       id="itemInput"
@@ -18,9 +18,10 @@
     />
 
     <div class="buttons project5">
-      <button onclick="addItem()" class="btn">Add Item</button>
-      <button class="btn" onclick="clearItem()">Clear Item</button>
+      <button onclick="addItem()" class="btn btn--green">Add Item</button>
+      <button class="btn btn--red" onclick="clearItem()">Clear Item</button>
     </div>
+
     <script src="./index.js"></script>
   </body>
 </html>

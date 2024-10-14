@@ -2,35 +2,33 @@ let items = [];
 
 const input = document.getElementById("itemInput");
 
-const itemsDiv = document.getElementById("item");
+const itemsList = document.getElementById("item");
 const storageKey = "items";
 
 function renderItems() {
-  itemsDiv.innerHTML = null;
+  itemsList.innerHTML = null;
 
   for (const [idx, item] of Object.entries(items)) {
-    const container = document.createElement("div");
-    container.style.marginBottom = "1rem";
+    const listElement = document.createElement("li");
+    listElement.textContent = item;
+    listElement.classList += " list_item";
 
-    const text = document.createElement("p");
-    text.textContent = item;
-    text.style.display = "inline";
-    text.style.marginRight = "1rem";
+    const anchor = document.createElement("a");
+    anchor.textContent = "Delete";
+    anchor.classList += " btn btn--general";
 
-    const button = document.createElement("button");
-    button.textContent = "Delete";
-    button.onclick = () => removeItem(idx);
+    listElement.appendChild(anchor);
 
-    container.appendChild(text);
-    container.appendChild(button);
+    anchor.onclick = () => removeItem(idx);
 
-    itemsDiv.appendChild(container);
+    itemsList.appendChild(listElement);
   }
 }
 
 function clearItem() {
   items.length = 0;
   renderItems();
+  saveItems();
 }
 
 function loadItems() {

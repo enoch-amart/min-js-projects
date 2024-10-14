@@ -22,11 +22,11 @@ h1 {
 .btn {
   border-radius: 5px;
   border: 0;
+  cursor: pointer;
   height: 5rem;
   margin: 1rem 3rem;
   outline: 0;
   padding: 1rem 2rem;
-  cursor: pointer;
   transition: transform 0.3s;
 }
 
@@ -34,8 +34,16 @@ h1 {
   transform: scale(1.1);
 }
 
+.btn--general {
+  background: #807e7e;
+}
+
+.btn--general:hover {
+  background: #979595;
+}
+
 .btn--green {
-  background: rgb(22, 230, 22);
+  background: rgb(4, 128, 4);
   color: #fff;
 }
 
@@ -92,6 +100,11 @@ h1 {
 }
 
 /* Project 5 - TODO List */
+.header {
+  text-align: start;
+  margin-left: 3rem;
+}
+
 h2 {
   font-size: 3rem;
   margin-left: 3rem;
@@ -107,5 +120,19 @@ h2 {
 
 .items {
   font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+.list {
+  padding: 0;
   margin-left: 3rem;
+}
+
+.list_item {
+  margin-bottom: 3rem;
+  font-size: 2rem;
 }
