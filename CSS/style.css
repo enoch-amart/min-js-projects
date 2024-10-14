@@ -92,8 +92,15 @@ h1 {
 }
 
 /* Project 5 - TODO List */
-#itemInput {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: ;
+h2 {
+  font-size: 3rem;
+  margin-left: 3rem;
+}
+
+.project5 {
+  justify-content: flex-start;
+}
+
+.project5.input {
+  margin: 1rem 3rem;
 }
