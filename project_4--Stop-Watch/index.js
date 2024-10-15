@@ -1,4 +1,4 @@
-let secondsElapsed = 0;
+let centiSecondsElapsed = 0;
 
 let interval = null;
 
@@ -9,20 +9,23 @@ function padStart(value) {
 }
 
 function setTime() {
-  const minutes = Math.floor(secondsElapsed / 60);
-  const seconds = secondsElapsed % 60;
+  const minutes = Math.floor(centiSecondsElapsed / 6000);
+  const seconds = Math.floor(centiSecondsElapsed / 100);
+  const centiSeconds = centiSecondsElapsed % 100;
 
-  time.innerHTML = `${padStart(minutes)}:${padStart(seconds)}`;
+  time.innerHTML = `${padStart(minutes)}:${padStart(seconds)}: ${padStart(
+    centiSeconds
+  )}`;
 }
 
 function timer() {
-  secondsElapsed++;
+  centiSecondsElapsed++;
   setTime();
 }
 
 function startClock() {
   if (interval) stopClock();
-  interval = setInterval(timer, 1000);
+  interval = setInterval(timer, 10);
 }
 
 function stopClock() {
@@ -31,6 +34,6 @@ function stopClock() {
 
 function resetClock() {
   stopClock();
-  secondsElapsed = 0;
+  centiSecondsElapsed = 0;
   setTime();
 }
