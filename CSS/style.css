@@ -13,21 +13,77 @@ h1 {
   font-size: 4rem;
 }
 
+.block {
+  padding: 3rem;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+.grid--1x3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 768px) {
+  .grid--1x3 {
+    grid-template-columns: 1fr;
+  }
+}
+
 .buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+.img--wrapper {
+  border: 1px solid #807e7e;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+  border: 1px solid #807e7e;
+  box-shadow: 0 0 0.5 #979595;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box__content > img {
+  width: 100%;
+}
+
 .btn {
   border-radius: 5px;
   border: 0;
   cursor: pointer;
-  height: 5rem;
   margin: 1rem 3rem;
   outline: 0;
   padding: 1rem 2rem;
   transition: transform 0.3s;
+}
+
+.btn--box {
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .btn:hover {
